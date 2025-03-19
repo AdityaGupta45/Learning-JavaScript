@@ -24,5 +24,23 @@ let myObj = {
 }
 
 const myFunction = function(){
-console.log("Hello World") ;
+console.log("Hello World") 
+} ;
+
+// Stack Memory (Primitive) , Heap Memory(Non Primitive)
+
+let myName = "Aditya" ;
+let myAnotherName = myName ; 
+myAnotherName = "Harsh" ;
+console.log(myName) ;
+console.log(myAnotherName) ;
+
+let userOne = {
+    email: "user@gmal.com",
+    upi: "user@sbi"
 }
+let userTwo = userOne ;
+userTwo.email = "aditya@gmail.com" ;
+
+console.log(userOne.email);
+console.log(userTwo.email)
